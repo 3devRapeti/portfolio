@@ -1,0 +1,1259 @@
+<html lang="en">
+    <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script>
+    <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
+    <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
+    <head>
+        <title>Rezume Free Template by Colorlib</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+        <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script>
+        <script src="https://kit.fontawesome.com/f41c0abf3f.js" crossorigin="anonymous"></script>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            body{
+                overflow-x: hidden;
+            }
+            ::-webkit-scrollbar {
+                width: 12px;              /* width of scrollbar */
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;      /* track color */
+                border-radius: 6px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: #ffffff; /* handle color */
+                border-radius: 6px;
+                border: 3px solid #bac964; /* padding around handle */
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: #bac964; /* handle color on hover */
+            }
+
+                /* For Firefox */
+            * {
+                scrollbar-width: thin;           /* thin scrollbar */
+                scrollbar-color: #bac964 #f1f1f1; /* thumb and track */
+            }
+            #namet {
+                opacity: 0;
+                transition: opacity 1s ease; /* 2s fade duration */
+            }
+
+            /* When visible */
+            #namet.show {
+                opacity: 1;
+            }
+            .bud {
+                position: absolute;
+                top: 0vh;
+                right: 1.35%; /* Positioned to the right of div1 */
+                height: 95.7%;
+                width: 30.7%; /* Start collapsed */
+                background: white;
+                color: black;
+                overflow: hidden;
+                white-space: nowrap;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: width 0.5s ease; /* Expand animation */
+                z-index: 10;
+            }
+
+            /* On hover expand div2 */
+            .bud:hover {
+                width: 97.85% /* Final expanded width */
+
+            }
+            .card_bu {
+                position: absolute;
+                top: 0vh;
+                right: 1.35%;
+                width: 30.7%;
+                height: 95.7%;
+                perspective: 1000px; /* enables 3D effect */
+                z-index: 10;
+            }
+            .card_kgp2 {
+                position: absolute;
+                top: 0vh;
+                right: 34.7%;
+                width: 28.7%;
+                height: 99.1%;
+                perspective: 1000px; /* enables 3D effect */
+                z-index: 10;
+            }
+            .card_kgp1 {
+                position: absolute;
+                top: 0vh;
+                left: 1.35%;
+                width: 30.7%;
+                height: 95.7%;
+                perspective: 1000px; /* enables 3D effect */
+                z-index: 10;
+            }
+
+            .card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+            }
+
+            /* Flip when hovered */
+            .card_bu:hover .card-inner {
+                transform: rotateY(180deg);
+            }
+            .card_kgp1:hover .card-inner {
+                transform: rotateY(180deg);
+            }
+            .card_kgp2:hover .card-inner {
+                transform: rotateY(180deg);
+            }
+
+            .card-front,
+            .card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden; /* hide the back side when not visible */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .card-front {
+                background: #444;
+                color: white;
+            }
+
+            .card-back {
+                background: white;
+                color: black;
+                transform: rotateY(180deg);
+            }
+            .content {
+                max-height: 1490px; /* initial visible height */
+                overflow: hidden;
+                transition: max-height 0.5s ease;
+                box-shadow: inset 0 4px 10px rgba(34,34,34,1);
+            }
+
+            .content.expanded1 {
+                max-height: 2490px; /* large enough to show full content */
+            }
+            .content.expanded2 {
+                max-height: 10000px;
+            }
+
+            .read-more-btn {
+                display: block;
+                margin-left: 46%;
+                background: transparent;
+                border: 0px solid #fff; 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol', 'Noto Color Emoji';
+                font-weight: 100;
+                color: #bcbcbc;
+                padding: 8px 16px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 18px;
+                transition: background 0.3s, color 0.3s;
+            }
+
+            .read-more-btn:hover {
+                color: #fff;
+            }
+
+            .read-less-btn {
+                margin-left: 46%;
+                display: none;
+                background: transparent;
+                border: 0px solid #fff; 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol', 'Noto Color Emoji';
+                font-weight: 100;
+                color: #bcbcbc;
+                padding: 8px 16px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 18px;
+                transition: background 0.3s, color 0.3s;
+            }
+
+            .read-less-btn:hover {
+                color: #fff;
+            }
+            .skills-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-top: 15px;
+            }
+            .skill-pill {
+                padding: 8px 16px;
+                background: transparent;
+                border-radius: 20px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+                font-size: 14px;
+                transition: 0.2s ease-in-out;
+                cursor: default;
+            }
+            .red{
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(255, 0, 0);
+                color: red;
+            }
+            .orange{
+                border-width: 1px;
+                border-style: solid;
+                border-color: orange;
+                color: orange;
+            }
+            .yellow{
+                border-width: 1px;
+                border-style: solid;
+                border-color: yellow;
+                color: yellow;
+            }
+            .white{
+                border-width: 1px;
+                border-style: solid;
+                border-color: white;
+                color: white;
+            }
+            .red:hover {
+                background: red;
+                color: #fff;
+                border-color: red;
+                transform: translateY(-2px);
+            }
+            .orange:hover{
+                background: orange;
+                color: #000;
+                border-color: orange;
+                transform: translateY(-2px);
+            }
+            .yellow:hover{
+                background: yellow;
+                color: black;
+                border-color: yellow;
+                transform: translateY(-2px);
+            }
+            .white:hover{
+                background: white;
+                color: black;
+                border-color: white;
+                transform: translateY(-2px);
+            }
+            #navbarsExample09{
+                transition: background 1s, color 1.3s;
+            }
+            #pb-navbar .navbar-nav {
+                justify-content: center;   /* centers horizontally */
+                text-align: center;        /* centers text if wrapping */
+                width: 100%;
+            }
+            #pb-navbar .nav-item {
+                margin: 0 15px;            /* optional spacing between items */
+            }
+            .resume-item{
+                transition: background 1s, color 1.3s;
+                color: white;
+                cursor: pointer;
+            }
+            .resume-item h2{
+                color: white;
+            }
+            .resume-item p{
+                color: rgb(171, 171, 171);
+            }
+            .resume-item .school{
+                color: aquamarine;
+            }
+            .resume-item:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
+            .resume-item:hover span{
+                color: black;
+            }
+            .resume-item:hover h3{
+                color: #61700e;
+            }
+            .resume-item:hover p{
+                color: #6a6a6a;
+            }
+            .resume-item:hover .school{
+                color: rgb(14, 95, 68);
+            }
+        </style>
+    </head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200" __processed_35e03e86-d974-4479-b7eb-53ff1c40c6f4__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjI2Iiwic2NvcmUiOjIwMDI2fV0=" data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed="">
+
+
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar" style="width: 100vw; padding: 0px; top: 30px;">
+		<div class="container" bis_skin_checked="1" style="width: 100vw; padding: 0px; margin: 0px;">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09" bis_skin_checked="1" style="width: 100vw !important; left: 0px; margin: auto;">
+				<ul class="navbar-nav" style="width: 100vw;">
+					<li class="nav-item"><a class="nav-link active" href="#section-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Education</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Professional Experience</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-skills">Skills</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <script>
+        const myDiv = document.getElementById("navbarsExample09");
+        const myDiv2 = document.getElementsByClassName("nav-link");
+        const n = document.getElementById("pb-navbar");
+    
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 30) {  
+                // after ~70% of landing screen
+                myDiv.style.backgroundColor = "#bac964";
+                n.style.position = "sticky";
+                n.style.top = "0";
+                n.style.left = "0";
+            } else {
+                myDiv.style.backgroundColor = "transparent";
+                n.style.position = "absolute";
+                n.style.top = "30px";
+            }
+        });
+    </script>
+
+	<section class="site-hero" style="background-image: url(images/image_1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+		<div class="container" bis_skin_checked="1" id="namet">
+			<div class="row intro-text align-items-center justify-content-center" bis_skin_checked="1">
+				<div class="col-md-10 text-center pt-5" bis_skin_checked="1">
+
+					<h1 class="site-heading site-animate fadeInUp site-animated">Hello, I'm <strong class="d-block">Tridev Rapeti</strong></h1>
+					<strong class="d-block text-white text-uppercase letter-spacing">and this is My Resume</strong>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- section -->
+
+    <script>
+        window.addEventListener("load", function () {
+            // Delay 1 second after load
+            setTimeout(function () {
+                document.getElementById("namet").classList.add("show");
+            }, 500);
+        });
+    </script>
+
+
+    <section class="site-section" id="section-about">
+        <div class="container" bis_skin_checked="1">
+            <div class="row mb-5 align-items-center" bis_skin_checked="1">
+                <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0" bis_skin_checked="1">
+                    <img src="images/image_1.jpg" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="col-lg-5 pl-lg-5" bis_skin_checked="1">
+                    <div class="section-heading" bis_skin_checked="1">
+                        <h2>About <strong>Me</strong></h2>
+                    </div>
+                    <p class="lead"><a style="color: rgb(0, 255, 0);">Top 1%</a> in <a style="color: white;">LeetCode</a>, <br><i class="fa-solid fa-star" style="color: gold; font-size: 15px;"></i><i class="fa-solid fa-star" style="color: gold; font-size: 15px;"></i><i class="fa-solid fa-star" style="color: gold; font-size: 15px;"></i><i class="fa-solid fa-star" style="color: gold; font-size: 15px;"></i><i class="fa-solid fa-star" style="color: gold; font-size: 15px;"></i> <a style="color: red;">Red-Coder</a> in <a style="color: white;">Codechef</a>, <br><a style="color: rgb(0, 200, 255);">Ranked 6th</a> of 1.5M aspirants in <a style="color: white;">IIT JEE Mains</a>, <br><a style="color: silver;">Silver</a> in Opensoft in <a style="color: white;">General Championship '24</a>, <br><a style="color: white;">Mathematician</a>, Musician, and Sketch Artist</p>
+                    <p class="mb-5  ">I am a passionate programmer with a strong mathematical perspective, which helps me approach problems logically and creatively. I am a slow learner as I enjoy learning new technologies deeply and strive to master concepts rather than just understand them. My adaptability allows me to quickly pick up new skills, supported by a broad foundation across multiple domains of computer science. I thrive in dynamic environments and bring both enthusiasm and dedication to delivering high-quality solutions.</p>
+
+                    <p>
+                        <a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll" style="color: black;">Hire Me</a>
+                        <a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container" bis_skin_checked="1">
+			<div class="row" bis_skin_checked="1">
+				<div class="section-heading text-center col-md-12" bis_skin_checked="1">
+					<h2>My <strong>Education</strong></h2>
+				</div>
+			</div>
+			<div class="filters" bis_skin_checked="1">
+				<ul>
+					<li class="active" data-filter="*">Hover on the top of each tile to view the coursework in each course</li>
+				</ul>
+			</div>
+
+			<div class="filters-content" bis_skin_checked="1">
+				<div class="row grid" bis_skin_checked="1" style="position: relative; height: 712.77px;">
+					<div class="single-portfolio col-sm-4 all mockup" bis_skin_checked="1" style="position: absolute; left: 0%; top: 0px;">
+						<div class="relative" bis_skin_checked="1">
+							<div class="thumb" bis_skin_checked="1">
+								<div class="overlay overlay-bg" bis_skin_checked="1"></div>
+								<img class="image img-fluid" src="images/p.png" alt="">
+							</div>
+							<a href="images/p.png" class="img-pop-up">  
+								<div class="middle" bis_skin_checked="1">
+									<div class="text align-self-center d-flex" bis_skin_checked="1"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner" bis_skin_checked="1">
+						</div>                                         
+					</div>
+					<div class="single-portfolio col-sm-4 all mockup" bis_skin_checked="1" style="position: absolute; left: 33.3319%; top: 0px;">
+						<div class="relative" bis_skin_checked="1">
+							<div class="thumb" bis_skin_checked="1">
+								<div class="overlay overlay-bg" bis_skin_checked="1"></div>
+								<img class="image img-fluid" src="images/p.png" alt="">
+							</div>
+							<a href="images/p.png" class="img-pop-up">  
+								<div class="middle" bis_skin_checked="1">
+									<div class="text align-self-center d-flex" bis_skin_checked="1"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner" bis_skin_checked="1">
+						</div>                                         
+					</div>                            
+					<div class="single-portfolio col-sm-4 all packaging" bis_skin_checked="1" style="position: absolute; left: 66.6639%; top: 0px;">
+						<div class="relative" bis_skin_checked="1">
+							<div class="thumb" bis_skin_checked="1">
+								<div class="overlay overlay-bg" bis_skin_checked="1"></div>
+							</div>
+							<a href="images/p.png" class="img-pop-up">  
+								<div class="middle" bis_skin_checked="1">
+									<div class="text align-self-center d-flex" bis_skin_checked="1"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a> 
+
+						</div>
+						<div class="p-inner" bis_skin_checked="1">
+						</div>
+					</div>
+                    <div class="card_bu">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img style="height: 51.3%; position: absolute; right: 0px; top: 0px;" src="images/p3.jpg" alt="">
+                                <img style="height: 51.3%; position: absolute; right: 0px; bottom: 0px;" src="images/p6.png" alt="">
+                            </div>
+                            <div class="card-back" style="text-align: center; background-color: rgba(204,0,1,255); color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol', 'Noto Color Emoji'; font-weight: 300;">
+                                Cybersecurity<br><br>
+                                Network Security<br><br>
+                                Enterprise Cybersecurity Management<br><br>
+                                Mobile Forensics and Security<br><br>
+                                Cryptography<br><br>
+                                Operating Systems<br><br>
+                                Computer Networks<br><br>
+                                Analysis of Algorithms<br><br>
+                                Software Engineering<br><br>
+                                Computer Language Theory
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_kgp2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img style="height: 51.3%; position: absolute; right: 0px; top: 0px;" src="images/p2.jpg" alt="">
+                                <img style="height: 51.3%; position: absolute; right: 0px; bottom: 0px;" src="images/p5.jpg" alt="">
+                            </div>
+                            <div class="card-back" style="text-align: center; background-color: white; color: rgba(1,53,101,255); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol', 'Noto Color Emoji'; font-weight: 300;">
+                                Systems Programming<br><br>
+                                Compiler Designing<br><br>
+                                Machine Learning & Deep Learning<br><br>
+                                Linear Algebra for AI & ML<br><br>
+                                Semantic Web Technologies<br><br>
+                                Augmented Reality & Virtual Reality<br><br>
+                                Topology<br><br>
+                                Functional Analysis<br><br>
+                                Operations Research<br><br>
+                                Advanced Numerical Techniques
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_kgp1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img style="height: 51.3%; position: absolute; right: 0px; top: 0px;" src="images/p1.jpg" alt="">
+                                <img style="height: 51.3%; position: absolute; right: 0px; bottom: 0px;" src="images/p4.jpg" alt="">
+                            </div>
+                            <div class="card-back"  style="text-align: center; background-color: rgba(1,53,101,255); color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji','Segoe UI Symbol', 'Noto Color Emoji'; font-weight: 100;">
+                                Design & Analysis of Algorithms<br><br>
+                                Database Management Systems<br><br>
+                                Operating Systems<br><br>
+                                Computer Networks<br><br>
+                                Computer Organisation & Architecture<br><br>
+                                Graph Theory and Finite Automata<br><br>
+                                Discrete Mathematics<br><br>
+                                Probability, Statistics & Stochastics<br><br>
+                                Modern Algebra<br><br>
+                                Integral Equations & Variational methods
+                            </div>
+                        </div>
+                    </div>
+					<div class="single-portfolio col-sm-4 all packaging" bis_skin_checked="1" style="position: absolute; left: 0%; top: 332.385px;">
+						<div class="relative" bis_skin_checked="1">
+							<div class="thumb" bis_skin_checked="1">
+								<div class="overlay overlay-bg" bis_skin_checked="1"></div>
+								<img class="image img-fluid" src="images/p.png" alt="">
+							</div>
+							<a href="images/p.png" class="img-pop-up">  
+								<div class="middle" bis_skin_checked="1">
+									<div class="text align-self-center d-flex" bis_skin_checked="1"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div> 
+						<div class="p-inner" bis_skin_checked="1">
+							<h4>BSc (Hons) Mathematics and Computing</h4>
+							<div class="cat" bis_skin_checked="1">Indian Institute of Technology Kharagpur</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all typography" bis_skin_checked="1" style="position: absolute; left: 66.6639%; top: 332.385px;">
+						<div class="relative" bis_skin_checked="1">
+							<div class="thumb" bis_skin_checked="1">
+								<div class="overlay overlay-bg" bis_skin_checked="1"></div>
+                                <img class="image img-fluid" src="images/p.png" alt="">
+							</div>
+							<a href="images/p.png" class="img-pop-up">  
+								<div class="middle" bis_skin_checked="1">
+									<div class="text align-self-center d-flex" bis_skin_checked="1"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner" bis_skin_checked="1">
+							<h4>MS (Hons) Computer Science<br>Concentration in Cybersecurity</h4>
+							<div class="cat" bis_skin_checked="1">Boston University</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all photography" bis_skin_checked="1" style="position: absolute; left: 33.3319%; top: 356.385px;">
+						<div class="relative" bis_skin_checked="1">
+							<div class="thumb" bis_skin_checked="1">
+								<div class="overlay overlay-bg" bis_skin_checked="1"></div>
+								<img class="image img-fluid" src="images/p.png" alt="">
+							</div>
+							<a href="images/p.png" class="img-pop-up">  
+								<div class="middle" bis_skin_checked="1">
+									<div class="text align-self-center d-flex" bis_skin_checked="1"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner" bis_skin_checked="1">
+							<h4>MSc (Hons) Mathematics and Computing</h4>
+							<div class="cat" bis_skin_checked="1">Indian Institute of Technology Kharagpur</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- .section -->
+
+	
+	<section class="site-section content" id="section-resume">
+		<div class="container" bis_skin_checked="1">
+			<div class="row" bis_skin_checked="1">
+				<div class="col-md-12 mb-5" bis_skin_checked="1">
+					<div class="section-heading text-center" bis_skin_checked="1">
+						<h2>My <strong>Professional Experience</strong></h2>
+					</div>
+				</div>
+                <div class="filters col-md-12" bis_skin_checked="1">
+                    <ul>
+                        <li class="active" data-filter="*">Click on each tile to view more or to divert to the GitHub repo</li>
+                    </ul>
+                </div>
+                <br>
+				<div class="col-md-6" bis_skin_checked="1">
+					<h2 class="mb-5">Work Experience</h2>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="samsung" style="cursor: pointer;">
+						<span class="date"><span class="icon-calendar"></span>May 2023 - July 2023</span>
+						<h3>Software Development Engineering Intern</h3>
+						<p> ● Worked in a project of the 6G Lab of Beyond 5G Team.<br>
+                            ● My project involves reducing runtime of the testing processes.<br>
+                            ● Learnt about DPDK Threads and used it to plunge the runtime.<br>
+                            ● Used SIMD specific to Intel's AVX512 to further reduce the runtime.<br>
+                            ● Integrated G-Test by defining callable functions for test cases.<br>
+                            ● Served as the coordinator of all the Interns managing and assisting with their problems and daily challenges.<br>
+                            ● Bagged a Full-time role Offer at the end for good performance.<br></p>
+						<span class="school"><b>Samsung R&D</b> - Bengaluru, India</span>
+					</div>
+					<div class="resume-item mb-4" bis_skin_checked="1" id="eeze">
+						<span class="date"><span class="icon-calendar"></span> January 2025 - April 2025</span>
+						<h3>Chief Technical Officer and Co-Founder</h3>
+						<p> ● Found and served as CTO for online shopping and delivery based startup different than other warehouse-based operated companies.<br>
+                            ● Built an application for the sellers: store owners and restaurants<br>
+                            ● Built an application for the buyers and shoppers<br>
+                            ● Built an application for the delivery personnel<br>
+                            ● Used Flutter for building the mobile application. <br>
+                            ● Achieved to gather required amount of funds from angel investors.</p>
+						<span class="school"><b>Eeze</b> - Pune, India</span>
+					</div>
+					<div class="resume-item mb-4" bis_skin_checked="1" id="leazkart">
+						<span class="date"><span class="icon-calendar"></span>April 2024 - June 2024</span>
+						<h3>Chief Technical Officer</h3>
+						<p> ● Served as a CTO for online private vehicle rentals open for both lessors and lessees.<br>
+                            ● Used Flutter for building the mobile application.<br>
+                            ● Learned and used AWS BeanStalk for the database to build the MVP.</p>
+						<span class="school"><b>Leazkart</b> - Pune, India</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="it">
+						<span class="date"><span class="icon-calendar"></span>January 2025 - Present</span>
+						<h3>Service Desk and Client Technology Support Assistant</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>IT Help Center, Boston University</b> - Boston, MA, USA</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="vendosmart">
+						<span class="date"><span class="icon-calendar"></span>October 2022 - December 2022</span>
+						<h3>Software Development Intern</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>Vendosmart Technologies Pvt Limited</b> - Bengaluru, India</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="madiee">
+						<span class="date"><span class="icon-calendar"></span>July 2021 - September 2021</span>
+						<h3>Full Stack Developer Intern</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Learnt and Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>Madiee Games</b> - Chennai, India</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="ircell">
+						<span class="date"><span class="icon-calendar"></span>September 2020 - August 2021</span>
+						<h3>Frontend Web Developer</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>International Relations Cell, IIT Kharagpur</b> - Kharagpur, India</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="agganis">
+						<span class="date"><span class="icon-calendar"></span>May 2025 - Present</span>
+						<h3>Cashier</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>Agganis Arena, Boston University</b> - Boston, MA, USA</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="warren">
+						<span class="date"><span class="icon-calendar"></span>September 2024 - April 2025</span>
+						<h3>Cashier and Student Volunteer</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>Warren Towers, Boston University</b> - Boston, MA, USA</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="tca">
+						<span class="date"><span class="icon-calendar"></span>March 2023 - June 2024</span>
+						<h3>Student Governor and Vocal Artist</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>Telugu Cultural Association, IIT Kharagpur</b> - Kharagpur, India</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="sf">
+						<span class="date"><span class="icon-calendar"></span>September 2019 - May 2020</span>
+						<h3>Associate Student Member and Corporate Sponsor Ad Representative</h3>
+						<p> ● Developed a personalised File Editor as per the requirements<br>
+                            ● Programmed file editor with options to hide customer details in the e-CAD Design in client orders.<br>
+                            ● Used Svelte for designing PDF viewer to view and download files<br>
+                            ● Added Node.js in the backend for File Editor.</p>
+						<span class="school"><b>Spring Fest, IIT Kharagpur</b> - Kharagpur, India</span>
+					</div>
+				</div>
+				<div class="col-md-6" bis_skin_checked="1">
+
+
+					<h2 class="mb-5">Projects</h2>
+					<div class="resume-item mb-4" bis_skin_checked="1" id="pabitra">
+						<span class="date"><span class="icon-calendar"></span> December 2022 - December 2024</span>
+						<h3>Encrypted Data Analysis using Graph IMDB: Conference Paper</h3>
+						<p> ● Designed an optimised framework for secure & efficient data OLAP.<br>
+                            ● Conceptualized and developed the complete system architecture.<br>
+                            ● Studied various cryptographic techniques and database models.<br>
+                            ● Applied Role-Based Access Control & Homomorphic Encryption.<br>
+                            ● Selected Graph Database for IMDB after testing with other models.<br>
+                            ● Conducted theoretical, mathematical, & experimental as first author.<br>
+                            ● Presented at Science Congress international conference in India.
+                        </p>
+						<span class="school">Guide: Prof. Pabitra Mitra, Computer Science, IIT Kharagpur</span>
+					</div>
+
+					<div class="resume-item mb-4" bis_skin_checked="1" id="mehrdad">
+						<span class="date"><span class="icon-calendar"></span> May 2025 - August 2025</span>
+						<h3>Tax-Slab Inspired Dynamic CPU Scheduling Algorithm</h3>
+						<p> ● Developed a CPU scheduling algorithm inspired by income tax slabs.<br>
+                            ● Designed the Tax-Slab Scheduling (TSS) algorithm and its variants.<br>
+                            ● Conducted analysis to compare with classical scheduling methods.<br>
+                            ● Demonstrated the performance improvements with the analytics.<br>
+                            ● Presented in an auditorium of 30 scholars at Boston University.</p>
+						<span class="school">Guide: Prof. Mehrdad Nourai, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+
+					<div class="resume-item mb-4" bis_skin_checked="1" id="yuting">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Steganography</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="alexa">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Alexa</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="muse">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Muse AI</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="wa">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Whatsapp Filter</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="ftp">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Official Foreign Training Portal of IIT Kharagpur</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="bonvent">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Bon-Vent Initiative</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="steganography">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Steganography</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+                    <div class="resume-item mb-4" bis_skin_checked="1" id="">
+						<span class="date"><span class="icon-calendar"></span> Jan 2025 - May 2025</span>
+						<h3>Steganography</h3>
+						<p> ● Explored steganography in mobile forensics through “Operation Reelsnare.”<bR>
+                            ● Performed stego analysis using tools like Steghide and ExifTool.<br>
+                            ● Demonstrated data embedding and extraction from images.<br>
+                            ● Analyzed implications for detection methods and forensic policy.
+                        </p>
+						<span class="school">Guide: Prof. Yuting Zhang, Computer Science, Metropolitan College, Boston University</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- .section -->
+    <hr style="width: 70%; border-width: 1px; border-color: #484848;"><a class="read-more-btn" onclick="togrm()" id="readMoreBtn">Read More<i class='fas fa-angle-double-down'></i></a><a class="read-less-btn" onclick="togrm()" id="readLessBtn">Read Less<i class='fas fa-angle-double-up'></i></a>
+    <script>
+        const content = document.getElementById("section-resume");
+        const button1 = document.getElementById("readMoreBtn");
+        const button2 = document.getElementById("readLessBtn");
+    
+        function togrm() {
+            // content.classList.toggle("expanded");
+            if(content.classList.contains("expanded1")) {
+                content.classList.remove("expanded1");
+                content.classList.add("expanded2");
+                button1.style.display="none";
+                button2.style.display="block";
+                window.scrollBy({ top: 1780, behavior: "smooth" });
+            }
+            else if(content.classList.contains("expanded2")) {
+                content.classList.remove("expanded2");
+                button1.style.display="block";
+                button2.style.display="none";
+                window.scrollBy({ top: -2780, behavior: "smooth" });
+            }
+            else {
+                content.classList.add("expanded1");
+                window.scrollBy({ top: 1000, behavior: "smooth" });
+            }
+        }
+    </script>
+    <script>
+        document.getElementById("samsung").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("eeze").addEventListener("click", function() {
+            alert("Sorry! No Documents or GitHub repo could be provided for this 😅. Reach out to me for more information on this."); // opens in new tab
+        });
+        document.getElementById("leazkart").addEventListener("click", function() {
+            alert("Sorry! No Documents or GitHub repo could be provided for this 😅. Reach out to me for more information on this."); // opens in new tab
+        });
+        document.getElementById("it").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("vendosmart").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("madiee").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("ircell").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("agganis").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("warren").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("tca").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("sf").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("pabitra").addEventListener("click", function() {
+           window.open("documents/pabitra.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("mehrdad").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("yuting").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("alexa").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("muse").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("ftp").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("wa").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("bonvent").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("steganography").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+        document.getElementById("samsung").addEventListener("click", function() {
+           window.open("documents/OS project.pdf", "_blank"); // opens in new tab
+        });
+    </script>
+
+    <section class="site-section" id="section-skills">
+        <div class="container" bis_skin_checked="1">
+			<div class="row" bis_skin_checked="1" style="margin-left: 2%;">
+                <div class="col-md-12 mb-5" bis_skin_checked="1">
+					<div class="section-heading text-center" bis_skin_checked="1">
+						<h2>My <strong>Programming Skills</strong></h2>
+					</div>
+				</div>
+                <h2 style="margin-top: 40px; font-size: 22px; color: #bac964; border-left: 4px solid aquamarine; padding-left: 10px; width: 100%;">Core Programming & Development</h2><br>
+                <div class="skills-container">
+                    <div class="skill-pill red">C</div>
+                    <div class="skill-pill red">C++</div>
+                    <div class="skill-pill red">Python</div>
+                    <div class="skill-pill red">JavaScript</div>
+                    <div class="skill-pill red">MATLAB</div>
+                    <div class="skill-pill red">HTML</div>
+                    <div class="skill-pill red">CSS</div>
+                    <div class="skill-pill red">SQL</div>
+                    <div class="skill-pill red">Django</div>
+                    <div class="skill-pill red">Flask</div>
+                    <div class="skill-pill orange">Java</div>
+                    <div class="skill-pill orange">R</div>
+                    <div class="skill-pill orange">Haskell</div>
+                    <div class="skill-pill orange">Flutter</div>
+                    <div class="skill-pill orange">Unity</div>
+                    <div class="skill-pill orange">PostgreSQL</div>
+                    <div class="skill-pill yellow">Node.js</div>
+                    <div class="skill-pill yellow">C#</div>
+                    <div class="skill-pill yellow">Spring Boot</div>
+                    <div class="skill-pill yellow">MongoDB</div>
+                </div><br>
+
+                <h2 style="margin-top: 40px; font-size: 22px; color: #bac964; border-left: 4px solid aquamarine; padding-left: 10px; width: 100%;">Cybersecurity & Forensics</h2><br>
+                <div class="skills-container">
+                    <div class="skill-pill white">Telnet</div>
+                    <div class="skill-pill white">Steganography</div>
+                    <div class="skill-pill white">Oxygen Forensics</div>
+                    <div class="skill-pill white">Wireshark</div>
+                    <div class="skill-pill white">Firewalls</div>
+                    <div class="skill-pill white">Kali Linux</div>
+                    <div class="skill-pill white">Nmap</div>
+                    <div class="skill-pill white">BurpSuite</div>
+                    <div class="skill-pill white">Metasploit</div>
+                </div><br>
+
+                <h2 style="margin-top: 40px; font-size: 22px; color: #bac964; border-left: 4px solid aquamarine; padding-left: 10px; width: 100%;">Software Engineering & Cloud Tools</h2><br>
+                <div class="skills-container">
+                    <div class="skill-pill white">AWS</div>
+                    <div class="skill-pill white">Docker</div>
+                    <div class="skill-pill white">Kubernetes</div>
+                    <div class="skill-pill white">Threads</div>
+                    <div class="skill-pill white">Google Colab</div>
+                    <div class="skill-pill white">Figma</div>
+                    <div class="skill-pill white">R Studio</div>
+                    <div class="skill-pill white">MATLAB</div>
+                </div><br>
+
+                <h2 style="margin-top: 40px; font-size: 22px; color: #bac964; border-left: 4px solid aquamarine; padding-left: 10px; width: 100%;">Testing & Automation</h2><br>
+                <div class="skills-container">
+                    <div class="skill-pill white">Selenium</div>
+                    <div class="skill-pill white">G-Test</div>
+                </div>
+
+                <h2 style="margin-top: 40px; font-size: 22px; color: #bac964; border-left: 4px solid aquamarine; padding-left: 10px; width: 100%;">Machine Learning & Data Science</h2><br>
+                <div class="skills-container">
+                    <div class="skill-pill white">ML in Python and R</div>
+                    <div class="skill-pill white">OpenCV</div>
+                    <div class="skill-pill white">MATLAB</div>
+                    <div class="skill-pill white">Bag of Words</div>
+                    <div class="skill-pill white">ANN</div>
+                    <div class="skill-pill white">CNN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- <section class="site-section">
+		<div class="container" bis_skin_checked="1">
+			<div class="row mb-5" bis_skin_checked="1">
+				<div class="col-md-12" bis_skin_checked="1">
+					<div class="section-heading text-center" bis_skin_checked="1">
+						<h2>Client <strong>Testimonial</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row" bis_skin_checked="1">
+				<div class="col-md-6" bis_skin_checked="1">
+
+					<div class="block-47 d-flex mb-5" bis_skin_checked="1">
+						<div class="block-47-image" bis_skin_checked="1">
+							<img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+							<cite class="block-47-quote-author">— Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6" bis_skin_checked="1">
+
+					<div class="block-47 d-flex mb-5" bis_skin_checked="1">
+						<div class="block-47-image" bis_skin_checked="1">
+							<img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+							<cite class="block-47-quote-author">— Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+				<div class="col-md-6" bis_skin_checked="1">
+
+					<div class="block-47 d-flex mb-5" bis_skin_checked="1">
+						<div class="block-47-image" bis_skin_checked="1">
+							<img src="images/person_3.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+							<cite class="block-47-quote-author">— Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6" bis_skin_checked="1">
+
+					<div class="block-47 d-flex mb-5" bis_skin_checked="1">
+						<div class="block-47-image" bis_skin_checked="1">
+							<img src="images/person_4.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
+							<cite class="block-47-quote-author">— Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section> -->
+
+
+	<!-- <section class="site-section pb-0" id="section-services">
+		<div class="container" bis_skin_checked="1">
+
+			<div class="row mb-4" bis_skin_checked="1">
+				<div class="col-md-12" bis_skin_checked="1">
+					<div class="section-heading text-center" bis_skin_checked="1">
+						<h2>My <strong>Services</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row" bis_skin_checked="1">
+
+				<div class="col-md-6 col-lg-4 text-center mb-5" bis_skin_checked="1">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn" bis_skin_checked="1">
+						<span class="icon">
+							<span class="icon-browser2"></span>
+						</span>
+						<h3 class="mb-4">Web Design</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5" bis_skin_checked="1">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn" bis_skin_checked="1">
+						<span class="icon">
+							<span class="icon-presentation"></span>
+						</span>
+						<h3 class="mb-4">Search Engine Optimization</h3>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5" bis_skin_checked="1">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn" bis_skin_checked="1">
+						<span class="icon">
+							<span class="icon-video2"></span>
+						</span>
+						<h3 class="mb-4">Video Editing</h3>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</section> -->
+
+
+	<!-- <section class="site-section" id="section-blog">
+		<div class="container" bis_skin_checked="1">
+			<div class="row" bis_skin_checked="1">
+				<div class="col-md-12 mb-5" bis_skin_checked="1">
+					<div class="section-heading text-center" bis_skin_checked="1">
+						<h2>Blog on <strong>Medium</strong></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" bis_skin_checked="1">
+				<div class="col-sm-6 col-lg-4 mb-4" bis_skin_checked="1">
+					<div class="blog-entry" bis_skin_checked="1">
+						<a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text" bis_skin_checked="1">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta" bis_skin_checked="1">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4" bis_skin_checked="1">
+					<div class="blog-entry" bis_skin_checked="1">
+						<a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text" bis_skin_checked="1">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta" bis_skin_checked="1">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4" bis_skin_checked="1">
+					<div class="blog-entry" bis_skin_checked="1">
+						<a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text" bis_skin_checked="1">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta" bis_skin_checked="1">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section> -->
+
+	<section class="site-section" id="section-contact">
+		<div class="container" bis_skin_checked="1">
+			<div class="row" bis_skin_checked="1">
+				<div class="col-md-12 mb-5" bis_skin_checked="1">
+					<div class="section-heading text-center" bis_skin_checked="1">
+						<h2>Get <strong>In Touch</strong></h2>
+					</div>
+				</div>
+
+				<div class="col-md-7 mb-5 mb-md-0" bis_skin_checked="1">
+					<form action="" class="site-form">
+						<h3 class="mb-5">Get In Touch</h3>
+						<div class="form-group" bis_skin_checked="1">
+							<input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+						</div>
+						<div class="form-group" bis_skin_checked="1">
+							<input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+						</div>
+						<div class="form-group" bis_skin_checked="1">
+							<input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
+						</div>
+						<div class="form-group mb-5" bis_skin_checked="1">
+							<textarea class="form-control px-3 py-4" cols="30" rows="5" placeholder="Write a Message"></textarea>
+						</div>
+						<div class="form-group" bis_skin_checked="1">
+							<input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message" style="color: black;">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-5 pl-md-5" bis_skin_checked="1">
+					<h3 class="mb-5">My Contact Details</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							tridev@bu.edu
+						</li>
+						<li>
+							<span class="text-uppercase">Phone</span>
+							+1 857 559 3656
+						</li>
+						<li>
+							<span class="text-uppercase">Fax</span>
+							+30 976 1382 9922
+						</li>
+						<li>
+							<span class="text-uppercase">Address</span>
+							75 St Alphonsus Street <br>
+							606  <br>
+							Boston, MA
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer" style="margin-top: -100px;">
+		<div class="container" bis_skin_checked="1">
+			
+			<div class="row mb-5" bis_skin_checked="1">
+				<div class="col-md-12 text-center" bis_skin_checked="1">
+					<p>
+						<a href="https://www.linkedin.com/in/3dev" class="social-item" style="padding-top: 20px;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" style="color: rgb(4, 104, 255);"></i></a>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=tridev@bu.edu&su=Hello&body=Hi%20I%20want%20to%20connect%20with%20you" class="social-item" style="padding-top: 20px;" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope" style="color: white;"></i></a>
+                        <a href="https://wa.me/18575593656?text=Hello%2C%20I%20would%20like%20to%20connect!" class="social-item" style="padding-top: 20px;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+						<a href="https://www.instagram.com/thunder_star_here/" class="social-item" style="padding-top: 20px;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" style="color: rgb(255, 30, 83);"></i></a>
+						<a href="https://www.facebook.com/rapeti.tridev" class="social-item" style="padding-top: 20px;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" style="color: rgb(0, 132, 193);"></i></a>
+						<a href="https://x.com/TRapeti26638" class="social-item" style="padding-top: 20px;" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter" style="color: rgb(174, 174, 174);"></i></a>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+
+
+
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
+
+    
+    <div id="give-freely-root-ejkiikneibegknkgimmihdpcbcedgmpo" class="give-freely-root" data-extension-id="ejkiikneibegknkgimmihdpcbcedgmpo" data-extension-name="Volume Booster" bis_skin_checked="1" style="display: block;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
